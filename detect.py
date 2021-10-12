@@ -22,13 +22,13 @@ if str(ROOT) not in sys.path:
     sys.path.append(str(ROOT))  # add ROOT to PATH
 ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative
 
-from models.experimental import attempt_load
-from utils.datasets import LoadImages, LoadStreams
-from utils.general import apply_classifier, check_img_size, check_imshow, check_requirements, check_suffix, colorstr, \
+from yolov5.models.experimental import attempt_load
+from yolov5.utils.datasets import LoadImages, LoadStreams
+from yolov5.utils.general import apply_classifier, check_img_size, check_imshow, check_requirements, check_suffix, colorstr, \
     increment_path, non_max_suppression, print_args, save_one_box, scale_coords, set_logging, \
     strip_optimizer, xyxy2xywh
-from utils.plots import Annotator, colors
-from utils.torch_utils import load_classifier, select_device, time_sync
+from yolov5.utils.plots import Annotator, colors
+from yolov5.utils.torch_utils import load_classifier, select_device, time_sync
 
 
 @torch.no_grad()
