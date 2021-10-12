@@ -1,4 +1,3 @@
-
 name: PyPi Release
 on:
 release:
@@ -30,4 +29,3 @@ deploy:
         user: __token__
         password: ${{ secrets.pypi_password }}
         verbose: true
-    
